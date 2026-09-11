@@ -84,4 +84,22 @@ Final fallback-preserving consumer: ce578528d147b509f0d82a011c550be9f07b5d25.
 A final default-route short-context rerun retained exact outputs and the
 piecewise capture behavior; see final-default-check.json.
 
-Final native head cbb0f5b strengthens the graph replay test with a non-scaling query perturbation and an explicit changed-output assertion; all 27 tests passed. Production API code is unchanged from 9606282.
+## Local reproduction
+
+Acquire the GPUs through the shared lease registry first. For a short candidate
+check against the validated current-main integration:
+
+```bash
+cd /workspace/vllm_dsv41/vllm-fused-out
+CUDA_VISIBLE_DEVICES=0,1,2,3 VLLM_USE_V2_MODEL_RUNNER=0 \
+VLLM_DEEP_GEMM_WARMUP=skip \
+PYTHONPATH=/workspace/vllm_dsv41/artifacts/fused-output:/workspace/vllm_dsv41/runtime-deps/nvidia_cutlass_dsl/dsl_packages:/workspace/vllm_dsv41/runtime-deps:$PWD \
+.venv/bin/python ../artifacts/fused-output/fused_output_bench.py \
+  --variant candidate --contexts 17 --trials 3 --output /tmp/fused-output-review.json
+```
+
+Use `--variant baseline` for the control and `--decode-min-tokens 128` for the
+split-KV fallback check. Use the default context list for the full comparison.
+The integration is ad72e29; the focused stacked branch on #56344 is 117bb01.
+Model validation ran on the integration; the fused consumer file is byte-identical
+between those branches, and scoped hooks passed on both. Native PR: FlashMLA #22.

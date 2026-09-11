@@ -7,7 +7,7 @@
   "files": [
     {
       "file": "FUSED_OUTPUT_RESULTS.md",
-      "sha256": "0f972537b7eb152abf140d4cdbec74c2d11269f3e5d7fdd13aa3996414ac2c42"
+      "sha256": "7bef5a4ab8b0a974ce1420eafd4c191a5e1fa591791a26c0318082e8c2e2c093"
     },
     {
       "file": "native-tests-complete.log",
@@ -61,5 +61,6 @@
       "file": "native-tests-final-replay.log",
       "sha256": "2dafa3a2ff6c25d5cb47cca495aaa18255c4571158324c1afcef530fed6f42c6"
     }
-  ]
+  ],
+  "stacked_consumer": "117bb01cbd1b3f2c8e9d682e1d31994d39cb67bf"
 }
