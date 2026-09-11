@@ -1,5 +1,5 @@
 {
-  "native_commit": "9606282",
+  "native_commit": "cbb0f5b9d4278b5725e48c763ef1450dc0116999",
   "vllm_base": "22258a26bc090bccf5473cf681bbe9bac41bd035",
   "vllm_integration": "6ff1e20b4f51729d84419f6f32f40c09b9e1ca74",
   "measured_prototype": "74d2d52",
@@ -56,6 +56,10 @@
     {
       "file": "abba-a2.json",
       "sha256": "13947fcdf7bfb53025c04a66e29683a046e8db8af680106fa5552841b0e41e9f"
+    },
+    {
+      "file": "native-tests-final-replay.log",
+      "sha256": "2dafa3a2ff6c25d5cb47cca495aaa18255c4571158324c1afcef530fed6f42c6"
     }
   ]
 }

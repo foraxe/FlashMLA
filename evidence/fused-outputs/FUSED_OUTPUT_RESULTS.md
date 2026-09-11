@@ -83,3 +83,5 @@ observed in the measured runs; all work used the shared lease registry.
 Final fallback-preserving consumer: ce578528d147b509f0d82a011c550be9f07b5d25.
 A final default-route short-context rerun retained exact outputs and the
 piecewise capture behavior; see final-default-check.json.
+
+Final native head cbb0f5b strengthens the graph replay test with a non-scaling query perturbation and an explicit changed-output assertion; all 27 tests passed. Production API code is unchanged from 9606282.
