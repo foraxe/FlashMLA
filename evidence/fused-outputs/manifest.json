@@ -1,0 +1,61 @@
+{
+  "native_commit": "9606282",
+  "vllm_base": "22258a26bc090bccf5473cf681bbe9bac41bd035",
+  "vllm_integration": "6ff1e20b4f51729d84419f6f32f40c09b9e1ca74",
+  "measured_prototype": "74d2d52",
+  "final_consumer": "ce578528d147b509f0d82a011c550be9f07b5d25",
+  "files": [
+    {
+      "file": "FUSED_OUTPUT_RESULTS.md",
+      "sha256": "0f972537b7eb152abf140d4cdbec74c2d11269f3e5d7fdd13aa3996414ac2c42"
+    },
+    {
+      "file": "native-tests-complete.log",
+      "sha256": "267e1d959b91385882cae29e95ac41e238e95ed7b0b6cd7b054728b27ffb1619"
+    },
+    {
+      "file": "abba-summary.json",
+      "sha256": "cacc613e70728d72125cda1fea1165d30ec435c6364c66be0871bff2dab570c4"
+    },
+    {
+      "file": "fused_output_bench.py",
+      "sha256": "123a4752c25e3ad57ec36bcfb4d8aba0a0341f977bf9b5abafe08827f26ac8ee"
+    },
+    {
+      "file": "fused_baseline.py",
+      "sha256": "a12c9ccb58097985cbb66fe3a307d5560f87ede593819ee769dda8f16b210763"
+    },
+    {
+      "file": "build_flashmla.py",
+      "sha256": "221eb3255f9fdba4e756e257ae67c7ddb1e57aaa6d2a3d8abf63acea71ce00fa"
+    },
+    {
+      "file": "fallback-baseline.json",
+      "sha256": "deb55bdf649c9dc8e8024e1b98c16c222b489083980711e6ba7315415d545fc2"
+    },
+    {
+      "file": "fallback-fixed.json",
+      "sha256": "e5702d4b6f9fda1594f0af4d3016eda01018962a3914ca0799a35fc029a0fb46"
+    },
+    {
+      "file": "final-default-check.json",
+      "sha256": "7ca92e2e2e4a437ca22d8ea326c87833b36ac2dc91f9955621e86ccd144e6566"
+    },
+    {
+      "file": "abba-a1.json",
+      "sha256": "9ae7df8f9c464b609ce5e4718c59f084b1b249e0925e54cea9881ebc46784aee"
+    },
+    {
+      "file": "abba-b1.json",
+      "sha256": "0c89550612b248ad65a0ac61aef6864fbcc817fd4501f6709125575e374f3391"
+    },
+    {
+      "file": "abba-b2.json",
+      "sha256": "6cff71e7f076bd0293dfb43d1e3fa79bc03ded048b914710881a0c9d43eed958"
+    },
+    {
+      "file": "abba-a2.json",
+      "sha256": "13947fcdf7bfb53025c04a66e29683a046e8db8af680106fa5552841b0e41e9f"
+    }
+  ]
+}
