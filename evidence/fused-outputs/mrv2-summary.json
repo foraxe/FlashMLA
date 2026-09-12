@@ -1,0 +1,44 @@
+{
+  "runner": "MRV2",
+  "runs": {
+    "a1": {
+      "ttft_ms": 29.52134609222412,
+      "prefill_ms": 28.872654074802995,
+      "tpot_ms": 6.325602634913391
+    },
+    "b1": {
+      "ttft_ms": 25.576114654541016,
+      "prefill_ms": 24.896090617403388,
+      "tpot_ms": 6.324681253837688
+    },
+    "b2": {
+      "ttft_ms": 24.347782135009766,
+      "prefill_ms": 23.767541395500302,
+      "tpot_ms": 6.319300160698948
+    },
+    "a2": {
+      "ttft_ms": 28.188586235046387,
+      "prefill_ms": 27.62807230465114,
+      "tpot_ms": 6.334432190106738
+    }
+  },
+  "all_tokens_exact": true,
+  "matched_steps": true,
+  "a": {
+    "ttft_ms": 28.87260913848877,
+    "prefill_ms": 28.230970492586493,
+    "tpot_ms": 6.329468854274305
+  },
+  "b": {
+    "ttft_ms": 25.130271911621094,
+    "prefill_ms": 24.43943195976317,
+    "tpot_ms": 6.324155285717949
+  },
+  "change_pct": {
+    "ttft_ms": -12.961548465943572,
+    "prefill_ms": -13.430422215980808,
+    "tpot_ms": -0.08394967537864728
+  },
+  "both_orders_favor_candidate": true,
+  "no_material_decode_regression": true
+}

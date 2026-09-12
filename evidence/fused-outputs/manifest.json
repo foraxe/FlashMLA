@@ -7,23 +7,31 @@
   "files": [
     {
       "file": "FUSED_OUTPUT_RESULTS.md",
-      "sha256": "7bef5a4ab8b0a974ce1420eafd4c191a5e1fa591791a26c0318082e8c2e2c093"
+      "sha256": "e8c751a5925fabf42dbfbfbdeb882d01311e7bf859c5b6e5d939d324a6b685b9"
     },
     {
-      "file": "native-tests-complete.log",
-      "sha256": "267e1d959b91385882cae29e95ac41e238e95ed7b0b6cd7b054728b27ffb1619"
+      "file": "README.md",
+      "sha256": "8e35473a48ab2aa9c836c2e80d8a8b0dd9f2ce19c742b3b085efc7a35300252c"
+    },
+    {
+      "file": "abba-a1.json",
+      "sha256": "9ae7df8f9c464b609ce5e4718c59f084b1b249e0925e54cea9881ebc46784aee"
+    },
+    {
+      "file": "abba-a2.json",
+      "sha256": "13947fcdf7bfb53025c04a66e29683a046e8db8af680106fa5552841b0e41e9f"
+    },
+    {
+      "file": "abba-b1.json",
+      "sha256": "0c89550612b248ad65a0ac61aef6864fbcc817fd4501f6709125575e374f3391"
+    },
+    {
+      "file": "abba-b2.json",
+      "sha256": "6cff71e7f076bd0293dfb43d1e3fa79bc03ded048b914710881a0c9d43eed958"
     },
     {
       "file": "abba-summary.json",
       "sha256": "cacc613e70728d72125cda1fea1165d30ec435c6364c66be0871bff2dab570c4"
-    },
-    {
-      "file": "fused_output_bench.py",
-      "sha256": "123a4752c25e3ad57ec36bcfb4d8aba0a0341f977bf9b5abafe08827f26ac8ee"
-    },
-    {
-      "file": "fused_baseline.py",
-      "sha256": "a12c9ccb58097985cbb66fe3a307d5560f87ede593819ee769dda8f16b210763"
     },
     {
       "file": "build_flashmla.py",
@@ -42,25 +50,54 @@
       "sha256": "7ca92e2e2e4a437ca22d8ea326c87833b36ac2dc91f9955621e86ccd144e6566"
     },
     {
-      "file": "abba-a1.json",
-      "sha256": "9ae7df8f9c464b609ce5e4718c59f084b1b249e0925e54cea9881ebc46784aee"
+      "file": "fused_baseline.py",
+      "sha256": "a12c9ccb58097985cbb66fe3a307d5560f87ede593819ee769dda8f16b210763"
     },
     {
-      "file": "abba-b1.json",
-      "sha256": "0c89550612b248ad65a0ac61aef6864fbcc817fd4501f6709125575e374f3391"
+      "file": "fused_output_bench.py",
+      "sha256": "123a4752c25e3ad57ec36bcfb4d8aba0a0341f977bf9b5abafe08827f26ac8ee"
     },
     {
-      "file": "abba-b2.json",
-      "sha256": "6cff71e7f076bd0293dfb43d1e3fa79bc03ded048b914710881a0c9d43eed958"
+      "file": "fused_output_bench_mrv2.py",
+      "sha256": "0732bc7acadddefb08b945f3bb277d1d8b6b6bf2470cbdc51f57b4241139429c"
     },
     {
-      "file": "abba-a2.json",
-      "sha256": "13947fcdf7bfb53025c04a66e29683a046e8db8af680106fa5552841b0e41e9f"
+      "file": "mrv2-a1.json",
+      "sha256": "cd086981b4c12a627bd1032a09c9977262c337dd9f71dc6c6443a9e8238a9184"
+    },
+    {
+      "file": "mrv2-a2.json",
+      "sha256": "5cdabaa50bb6085a1a9997d0da125c3cec9f3850cc98971f7bd8e1e125411536"
+    },
+    {
+      "file": "mrv2-b1.json",
+      "sha256": "2b40ba046bd78a9eb6da33dd85d3e1f9c45acc062b8253bcd6403aea49971c71"
+    },
+    {
+      "file": "mrv2-b2.json",
+      "sha256": "ff1253541383a5c3b0de8b85ed7fb597d8b55634cdde6e8e4bf7907058db8587"
+    },
+    {
+      "file": "mrv2-summary.json",
+      "sha256": "e7ccdb18157f13f7c036490034bb4218c725cd6c3a1726f07a69f0f4f9e56c75"
+    },
+    {
+      "file": "native-tests-complete.log",
+      "sha256": "267e1d959b91385882cae29e95ac41e238e95ed7b0b6cd7b054728b27ffb1619"
     },
     {
       "file": "native-tests-final-replay.log",
       "sha256": "2dafa3a2ff6c25d5cb47cca495aaa18255c4571158324c1afcef530fed6f42c6"
+    },
+    {
+      "file": "run_mrv2_remaining.py",
+      "sha256": "9539727aa497c7570e7956678b88199f6c6129f440af709efc41f760f6852970"
+    },
+    {
+      "file": "summarize_mrv2.py",
+      "sha256": "e8a1e2389964af7d0eafd57ebcfbb0ca891a5a28ce682023f3b0ada08ab5eecb"
     }
   ],
-  "stacked_consumer": "117bb01cbd1b3f2c8e9d682e1d31994d39cb67bf"
+  "stacked_consumer": "6dd88a8c142aca455d735b7d70c6d0136482158c",
+  "mrv2_integration": "ad72e296d3d0725395641b78273bc3820c38abc6"
 }

@@ -103,3 +103,35 @@ split-KV fallback check. Use the default context list for the full comparison.
 The integration is ad72e29; the focused stacked branch on #56344 is 117bb01.
 Model validation ran on the integration; the fused consumer file is byte-identical
 between those branches, and scoped hooks passed on both. Native PR: FlashMLA #22.
+
+## MRV2 qualification
+
+The MRV2 run explicitly sets VLLM_USE_V2_MODEL_RUNNER=1 on integration
+ad72e296d3d0725395641b78273bc3820c38abc6. The automatic graph policy selects
+breakable PIECEWISE prefill and FULL decode. Same TP4 configuration and short
+17-input/64-output workload, A/B/B/A, two warmups and six measured requests
+per run. All 32 short-request outputs and mixed-request outputs match exactly
+across arms; each worker has one prefill and 63 nonempty decode steps.
+
+Short-prefill diagnostic: 40 eager wo_a calls per worker in baseline, zero
+in candidate; one PIECEWISE and two FULL diagnostic executions in both.
+Projection and graph-count hooks are removed before timing.
+
+Pooled median TTFT: 28.873 -> 25.130 ms
+(-12.96%). Both order comparisons favor candidate.
+TPOT: 6.3295 -> 6.3242 ms
+(-0.08%). No decode speedup claim.
+MRV2 long-context timing and split-KV fallback were not repeated; their prior
+checks remain MRV1-only. This is bounded short-prefill evidence.
+
+Per-run TTFT medians: A1 29.521,
+B1 25.576, B2 24.348,
+A2 28.189 ms.
+
+Reproduce with the environment above, changing VLLM_USE_V2_MODEL_RUNNER to 1
+and the driver to fused_output_bench_mrv2.py. Use --contexts 17 --trials 6
+and --variant baseline/candidate in A/B/B/A order. summarize_mrv2.py checks
+all outputs, routes and scheduler steps and writes mrv2-summary.json.
+
+Published stacked consumer metadata is 6dd88a8c142aca455d735b7d70c6d0136482158c; its code tree is
+identical to the previously reviewed 117bb01.
